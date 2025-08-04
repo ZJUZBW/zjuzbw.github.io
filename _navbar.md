@@ -1,11 +1,12 @@
 * 关于
   * 作者
 * 正义之怒
-  * 主角BD
-  * 队友BD
-  * 施法者玩法大全
-  * 全专长分析
+  * [主角BD](Wotr/Wotr-BD-Ldr/)
+  * [队友BD](Wotr/Wotr-BD-Tm8/)
+  * [施法者玩法大全](/Wotr/Wotr-Analysis-Spell/)
+  * [全专长分析](/Wotr/Wotr-Analysis-Feature/)
   * MOD相关
+  * [已知BUG](/Wotr/Wotr-Bug-Statistics)
 * 拥王者
   * 主角BD
   * 队友BD

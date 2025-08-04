@@ -18,10 +18,10 @@
   * [施法者手册](/Wotr/Wotr-Analysis-Spell/)
   * [属性、AB、AC和豁免堆叠](/Wotr/Wotr-Buff/Wotr-Buff)
   * [法术对抗](/Wotr/Wotr-Buff/Wotr-Anti-Spell)
-* 装备汇总
-* [全专长分析](/Wotr/Wotr-Analysis-Feature/)
-* 菜刀测评分析
-* [已知BUG](/Wotr/Wotr-Bug-Statistics)
-* [游戏更新变动](/Wotr/Wotr-Bug-Statistics)
-* MOD相关
+  * [全专长分析](/Wotr/Wotr-Analysis-Feature/)
+  * 菜刀测评分析
+  * 装备汇总
+  * [游戏更新变动](/Wotr/Wotr-Bug-Statistics)
+  * [已知BUG](/Wotr/Wotr-Bug-Statistics)
+  * MOD相关
 
