@@ -1,4 +1,4 @@
-- [首页](Wotr/Wotr-BD-Tm8/)
+- [前言](Wotr/Wotr-BD-Tm8/)
 - [席拉](Wotr/Wotr-BD-Tm8/Seelah)
 - [科米丽雅](/Wotr/Wotr-BD-Tm8/Camellia)
 - [兰恩](/Wotr/Wotr-BD-Tm8/Lann)
