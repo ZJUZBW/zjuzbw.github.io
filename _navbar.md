@@ -1,19 +1,19 @@
 * 关于
-  * 作者
+  * 作者（暂无）
 * 正义之怒
   * [主角BD](Wotr/Wotr-BD-Ldr/)
   * [队友BD](Wotr/Wotr-BD-Tm8/)
   * [施法者玩法大全](/Wotr/Wotr-Analysis-Spell/)
   * [全专长分析](/Wotr/Wotr-Analysis-Feature/)
-  * MOD相关
+  * MOD相关（暂无）
   * [已知BUG](/Wotr/Wotr-Bug-Statistics)
 * 拥王者
-  * 主角BD
-  * 队友BD
-  * 战报
-  * 施法者玩法大全
-  * 全专长分析
-  * MOD相关
+  * 主角BD（暂无）
+  * 队友BD（暂无）
+  * 战报（暂无）
+  * 施法者玩法大全（暂无）
+  * 全专长分析（暂无）
+  * MOD相关（暂无）
 * 十字军之王III
 * 建议
 
