@@ -57,6 +57,15 @@
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
     <!-- 搜索功能支持 -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    
+    <script>
+        // 判断是否处于根路径，且没有 hash（#）时进行跳转
+        if ((location.pathname === '/' || location.pathname === '/index.html') && !location.hash) 
+        {
+            location.replace(location.origin + '/#/'); // 跳转到 SPA 首页
+        }
+    </script>
+    
 </body>
 
 </html>
