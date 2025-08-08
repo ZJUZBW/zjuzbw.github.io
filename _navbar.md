@@ -1,5 +1,5 @@
 * 关于
-  * 作者（暂无）
+  * [作者](https://github.com/ZJUZBW)
 * 正义之怒
   * [主角BD](Wotr/Wotr-BD-Ldr/)
   * [队友BD](Wotr/Wotr-BD-Tm8/)
@@ -15,5 +15,9 @@
   * 全专长分析（暂无）
   * MOD相关（暂无）
 * 十字军之王III
+  * 暂无
+
 * 建议
+  * 暂无
+
 
