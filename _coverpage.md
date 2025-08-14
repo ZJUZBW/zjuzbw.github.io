@@ -9,4 +9,4 @@
 * [十字军之王III | Crusader Kings III](CK3/)
 
 [GitHub](https://github.com/ZJUZBW)
-[开始访问](guide)
+[全站导航](guide)
