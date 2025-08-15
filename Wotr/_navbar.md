@@ -1,3 +1,4 @@
+* [全站导航](guide)
 * [主角BD](Wotr/Wotr-BD-Ldr/)
 * [队友BD](Wotr/Wotr-BD-Tm8/)
   * [席拉](Wotr/Wotr-BD-Tm8/Seelah)
