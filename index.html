@@ -13,7 +13,7 @@
     <!-- 默认主题 -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-51TETZWBCZ"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-51TETZWBCZ" data-cfasync="false"></script>
     <script data-cfasync="false">
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -50,7 +50,7 @@
                 noData: '找不到结果',
                 depth: 4,
                 hideOtherSidebarContent: false,
-                namespace: 'docsify-demo',
+                namespace: 'docsify-demo'
             },
             plugins: [
                 function (hook) {
@@ -59,11 +59,70 @@
                         requestAnimationFrame(() => {
                             gtag('event', 'page_view', {
                                 page_location: location.href,
-                                page_title: document.title
-                                // 如需：page_path: location.pathname + location.hash
+                                page_title: document.title,
+                                page_path: location.pathname + location.hash
                             });
                         });
                     });
+                },
+                function (hook) {
+                    const SEL = '#main .content h2, #main .content h3';
+                    let sections = new Map(), io;
+
+                    function setupSections() {
+                        sections.clear();
+                        document.querySelectorAll(SEL).forEach((h,i)=>{
+                        if(!h.id) h.id = 'sec-'+i+'-'+(h.textContent||'').trim().replace(/\s+/g,'-');
+                        sections.set(h.id,{title:(h.textContent||'').trim(),vis:false,t0:0,ms:0});
+                        });
+                    }
+
+                    function observe() {
+                        if(io) io.disconnect();
+                        io = new IntersectionObserver((ents)=>{
+                        const now = performance.now();
+                        ents.forEach(e=>{
+                            const s = sections.get(e.target.id); if(!s) return;
+                            if(e.isIntersecting){
+                            if(!s.vis){ s.vis = true; s.t0 = now; }
+                            } else {
+                            if(s.vis){ s.vis = false; s.ms += now - s.t0; s.t0 = 0; }
+                            }
+                        });
+                        }, { rootMargin:'0px 0px -30% 0px', threshold:0.1 });
+
+                        sections.forEach((_, id)=>{
+                        const el=document.getElementById(id);
+                        if(el) io.observe(el);
+                        });
+                    }
+
+                    function flush() {
+                        const now = performance.now();
+                        sections.forEach((s,id)=>{
+                        const ms = Math.round(s.ms + (s.vis && s.t0 ? (now - s.t0) : 0));
+                        if(ms > 500){ // 超过0.5秒再上报
+                            gtag('event','section_view',{
+                            section_id:id,
+                            section_title:s.title,
+                            dwell_ms:ms
+                            });
+                            s.ms = 0;
+                            s.t0 = s.vis ? now : 0;
+                        }
+                        });
+                    }
+
+                    hook.doneEach(() => {
+                        setupSections();
+                        observe();
+                        setTimeout(flush, 2000); // 首屏 2 秒后先 flush 一次
+                    });
+
+                    // 页面事件也 flush
+                    window.addEventListener('scroll', ()=>{ requestAnimationFrame(flush); }, {passive:true});
+                    window.addEventListener('beforeunload', flush);
+                    window.addEventListener('hashchange', flush);
                 }
             ]
         }
