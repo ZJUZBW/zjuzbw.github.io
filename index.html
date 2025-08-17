@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-51TETZWBCZ"></script>
-    <script>
+    <script data-cfasync="false">
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-51TETZWBCZ', { send_page_view: false });
+        gtag('config', 'G-51TETZWBCZ', { send_page_view: false , debug_mode: true });
     </script>
 </head>
 
@@ -42,11 +42,7 @@
             maxLevel: 4,
             // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级，建议配置为1或者2
             subMaxLevel: 3
-        }
-    </script>
-    <script>
-        // 搜索配置
-        window.$docsify = {
+            // 搜索配置
             search: {
                 maxAge: 86400000,
                 paths: auto,
@@ -56,6 +52,20 @@
                 hideOtherSidebarContent: false,
                 namespace: 'docsify-demo',
             }
+            plugins: [
+                function (hook) {
+                    // 让 docsify 的每次渲染后上报一次 page_view
+                    hook.doneEach(function () {
+                        requestAnimationFrame(() => {
+                            gtag('event', 'page_view', {
+                                page_location: location.href,
+                                page_title: document.title
+                                // 如需：page_path: location.pathname + location.hash
+                            });
+                        });
+                    });
+                }
+            ]
         }
     </script>
     <!-- docsify的js依赖 -->
@@ -73,22 +83,6 @@
         {
             location.replace(location.origin + '/#/'); // 跳转到 SPA 首页
         }
-    </script>
-    <script>
-        // 让 docsify 的每次渲染后上报一次 page_view
-        window.$docsify = window.$docsify || {};
-        window.$docsify.plugins = [].concat((hook) => {
-        hook.doneEach(function () {
-        // 内容渲染后再上报，避免拿不到标题
-            requestAnimationFrame(() => {
-                gtag('event', 'page_view', {
-                    page_location: location.href,
-                    page_title: document.title
-                    // 也可以加 page_path: location.pathname + location.hash
-                });
-            });
-        });
-        }, window.$docsify.plugins || []);
     </script>
 </body>
 
