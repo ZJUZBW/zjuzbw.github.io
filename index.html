@@ -41,17 +41,17 @@
             // 最大支持渲染的标题层级
             maxLevel: 4,
             // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级，建议配置为1或者2
-            subMaxLevel: 3
+            subMaxLevel: 3,
             // 搜索配置
             search: {
                 maxAge: 86400000,
-                paths: auto,
+                paths: 'auto',
                 placeholder: '搜索',
                 noData: '找不到结果',
                 depth: 4,
                 hideOtherSidebarContent: false,
                 namespace: 'docsify-demo',
-            }
+            },
             plugins: [
                 function (hook) {
                     // 让 docsify 的每次渲染后上报一次 page_view
