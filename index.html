@@ -12,6 +12,15 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!-- 默认主题 -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-51TETZWBCZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-51TETZWBCZ', { send_page_view: false });
+    </script>
 </head>
 
 <body>
@@ -65,7 +74,22 @@
             location.replace(location.origin + '/#/'); // 跳转到 SPA 首页
         }
     </script>
-    
+    <script>
+        // 让 docsify 的每次渲染后上报一次 page_view
+        window.$docsify = window.$docsify || {};
+        window.$docsify.plugins = [].concat((hook) => {
+        hook.doneEach(function () {
+        // 内容渲染后再上报，避免拿不到标题
+            requestAnimationFrame(() => {
+                gtag('event', 'page_view', {
+                    page_location: location.href,
+                    page_title: document.title
+                    // 也可以加 page_path: location.pathname + location.hash
+                });
+            });
+        });
+        }, window.$docsify.plugins || []);
+    </script>
 </body>
 
 </html>
