@@ -25,4 +25,5 @@
   * [游戏更新变动](/Wotr/Wotr-Bug-Statistics)
   * [已知BUG](/Wotr/Wotr-Bug-Statistics)
   * MOD相关
+* [返回首页](/)
 
