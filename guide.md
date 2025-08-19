@@ -8,7 +8,9 @@
 
 **更新日志**：
 
-2025/8/18：修改队友科米丽雅的[【蛇霜祭司BD】](Wotr/Wotr-BD-Tm8/Camellia)
+2025/8/19：更新队友岱兰的[【王冠令使BD】](Wotr/Wotr-BD-Tm8/Daeran)（其实就是主沟通的纯职先知，搭配佯攻）
+
+2025/8/18：修改队友科米丽雅的[【蛇霜祭司BD】](Wotr/Wotr-BD-Tm8/Camellia)（巫术辅助+咒法群控+射线攻坚）
 
 2025/8/15：修改[【鷲马骑兵BD】](Wotr/Wotr-BD-Ldr/Hippogriff)，加强了第三章的先攻；新增[【动物伙伴鷲马BD】](Wotr/Wotr-BD-Ldr/Hippogriff#动物伙伴鷲马的加点)；修改[【神眷猎人BD】](Wotr/Wotr-BD-Ldr/README#近战神眷猎人)；修改[【神眷猎人BD】](Wotr/Wotr-BD-Ldr/README#近战神眷猎人)的错误。
 
