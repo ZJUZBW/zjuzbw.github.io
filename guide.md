@@ -6,7 +6,11 @@
 | [全专长分析](/Wotr/Wotr-Analysis-Feature/)   |        |               |
 | [已知BUG](/Wotr/Wotr-Bug-Statistics)         |        |               |
 
+目前除了雷吉尔、葛雷博和特雷弗，其他队友的BD都已经适配游戏的最新版本。
+
 **更新日志**：
+
+2025/9/1：更新索希尔的[牧师BD](Wotr/Wotr-BD-Tm8/Sosiel)描述和排版，更新了主角BD[【螳螂狂信徒+灵使道途】](Wotr/Wotr-BD-Ldr/Warpriest)---无限群控+高伤害高生存的敏双持BD，后期全程都在战场中瞬移。
 
 2025/8/22：更新席拉BD的神话加点顺序，索希尔的BD描述，以及队友BD的[前言](Wotr/Wotr-BD-Tm8/)
 
