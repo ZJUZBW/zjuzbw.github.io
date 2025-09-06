@@ -44,11 +44,19 @@
             subMaxLevel: 3,
             // 搜索配置
             search: {
-                maxAge: 86400000,
-                paths: 'auto',
+                maxAge: 0,
+                paths: [
+                    '/',
+                    '/Wotr/',
+                    '/Wotr/Wotr-Analysis-Feature/',
+                    '/Wotr/Wotr-Analysis-Spell/',
+                    '/Wotr/Wotr-BD-Ldr/',
+                    '/Wotr/Wotr-BD-Tm8/',
+                    '/Wotr/Wotr-Buff/'
+                ],
                 placeholder: '搜索',
                 noData: '找不到结果',
-                depth: 4,
+                depth: 6,
                 hideOtherSidebarContent: false,
                 namespace: 'docsify-demo'
             },
