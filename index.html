@@ -19,7 +19,7 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-51TETZWBCZ', { send_page_view: false , debug_mode: true });
+        gtag('config', 'G-51TETZWBCZ', { send_page_view: false , debug_mode: false });
     </script>
 </head>
 
@@ -131,6 +131,17 @@
                     window.addEventListener('scroll', ()=>{ requestAnimationFrame(flush); }, {passive:true});
                     window.addEventListener('beforeunload', flush);
                     window.addEventListener('hashchange', flush);
+
+                    // 就在这里加上可见性监听
+                    document.addEventListener('visibilitychange', () => {
+                        if (document.hidden) {
+                            doFlush(); // 切到后台前，把当前可见 section 结算掉
+                        } 
+                        else {
+                    // 页面回到前台时，如果需要，可以把正在可见的 section 重置计时
+                            sections.forEach(s => { if (s.vis) s.t0 = performance.now(); });
+                        }
+                    });
                 }
             ]
         }
