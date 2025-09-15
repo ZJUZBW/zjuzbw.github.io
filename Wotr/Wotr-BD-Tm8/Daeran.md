@@ -1,4 +1,4 @@
-## **岱兰**
+# 岱兰
 
 <img src="../../images/Wotr/portraits/岱兰立绘.jpg" width="400">
 

@@ -1,4 +1,4 @@
-## **聂纽**
+# 聂纽
 
 <center class="half">    
   <img src="../../images/Wotr/portraits/聂纽立绘1.jpg" width="400"/>    
@@ -7,7 +7,7 @@
 
 
 
-### 10卷轴专家10博学士
+## 10卷轴专家10博学士
 
 - [x] 不公平难度实测
 

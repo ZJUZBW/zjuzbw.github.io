@@ -1,8 +1,8 @@
-## 小烬
+# 小烬
 
 <img src="../../images/Wotr/portraits/小烬立绘.png" width="400">
 
-### 12受诅巫师7博学士1混血术士
+## 12受诅巫师7博学士1混血术士
 
 **玩法链接（必看）** ---[正义之怒施法者入门和进阶手册](https://github.com/ZJUZBW/Wotr-AofS)
 
