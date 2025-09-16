@@ -1,3 +1,9 @@
+- [主角BD前言](/Wotr/Wotr-BD-Ldr/)
+
+- [目录](/Wotr/Wotr-BD-Ldr/guide)
+
+- [主角特殊加成](/Wotr/Wotr-BD-Ldr/主角的特殊加成)
+
 - [九环神术施法者](/Wotr/Wotr-BD-Ldr/九环神术施法者)
 
 - [圣职杀手](/Wotr/Wotr-BD-Ldr/圣职杀手)
@@ -18,6 +24,8 @@
 
 - [九环奥术施法者](/Wotr/Wotr-BD-Ldr/Wizard)
 
+- [搁置内容](/Wotr/Wotr-BD-Ldr/搁置内容)
+
   
-  
+
   
