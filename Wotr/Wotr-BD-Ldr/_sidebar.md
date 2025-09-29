@@ -26,7 +26,7 @@
 
 - [战斗祭司](/Wotr/Wotr-BD-Ldr/Warpriest)
 
-- [操念使](/Wotr/Wotr-BD-Ldr/Kineticist)
+- [操念使](/Wotr/Wotr-BD-Ldr/Kineticist) -<small>推荐给全DLC的新手施法者玩家</small>
 
 - [搁置内容](/Wotr/Wotr-BD-Ldr/搁置内容)
 
